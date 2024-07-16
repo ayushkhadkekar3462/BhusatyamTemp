@@ -178,14 +178,14 @@ function Navbar() {
       <div className="container">
         <div className="logo">
           <Link className="link" to="/">
-            <span className="text">FreelanceNest</span>
+            <span className="text">Bhusatyam Technology</span>
           </Link>
-          <span className="dot">.</span>
+          <span className="dot"></span>
         </div>
         <div className="links">
-          <span>Business</span>
-          <span>Explore</span>
-          <div className="walletsec">
+          <span>Buy Land</span>
+          <span>Find agent</span>
+          {/* <div className="walletsec">
             {accounts && accounts.length > 0 && (
               <div className="connected">
                 <p> Account Details</p>
@@ -195,7 +195,7 @@ function Navbar() {
             {!accounts && (
               <button onClick={connectWallet}>Connect Wallet</button>
             )}
-          </div>
+          </div> */}
 
           {!currentUser?.isSeller && <span>Become a Seller</span>}
           {currentUser ? (
