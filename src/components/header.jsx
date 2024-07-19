@@ -25,7 +25,7 @@ function Header() {
   return (
     <div className={styles.header}>
       {["sm"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="bg-stone-200">
+        <Navbar key={expand} expand={expand} >
           <Container fluid>
             <div className="flex">
               <Link to="/" className="font-bold text-2xl text-gray-500">
