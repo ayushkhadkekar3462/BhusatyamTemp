@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sedan+SC&family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
+.header{
+  background-color:#e3eae6;
+}
 .headerText{
   /* font-size: 15px; */
   font-weight: 400;
