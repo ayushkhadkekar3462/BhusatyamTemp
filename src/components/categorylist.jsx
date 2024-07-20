@@ -20,7 +20,7 @@ const CategoryList = () => {
   };
 
   return (
-    <div className="container mx-auto my-4 text-center">
+    <div className="container mx-auto my-12  mx-8 text-center">
       <div className="flex flex-wrap justify-center">
         {categories.map((category, index) => (
           <div key={index} className="p-2">

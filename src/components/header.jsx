@@ -13,11 +13,11 @@ function Header() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 576); // Assuming "sm" breakpoint is 576px
+      setIsMobile(window.innerWidth <= 576); 
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Call once on mount to set initial value
+    handleResize(); 
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);

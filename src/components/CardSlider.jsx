@@ -41,7 +41,7 @@ const CardSlider = () => {
   ];
 
   return (
-    <div className="card-slider">
+    <div className="card-slider py-4">
       <Slider {...settings}>
         {cards.map((card) => (
             <><div className="card" style={{ backgroundImage: `url(${card.img})` }}></div>

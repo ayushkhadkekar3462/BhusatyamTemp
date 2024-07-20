@@ -9,6 +9,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import Textslider from '../../components/textsilder'
 import CategoryList from '../../components/categorylist'
 import MarketplaceInfo from '../../components/info'
+import Footer from '../../components/footer'
 
 function Home() {
   return (
@@ -35,7 +36,7 @@ function Home() {
         <MarketplaceInfo />
       </header>
     </div>
-    
+    <Footer />
     </>
 
   )
