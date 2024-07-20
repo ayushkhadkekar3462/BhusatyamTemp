@@ -10,6 +10,7 @@ import Textslider from '../../components/textsilder'
 import CategoryList from '../../components/categorylist'
 import MarketplaceInfo from '../../components/info'
 import Footer from '../../components/footer'
+import CardSlider2 from '../../components/CardSlider2'
 
 function Home() {
   return (
@@ -31,6 +32,9 @@ function Home() {
         <CategoryList />
       </div>
     </div>
+    <div className='slider2headingencloser'><div className="slider2heading">Nearby land for sale</div>
+    <CardSlider2/></div>
+    
     <div className="App">
       <header className="App-header">
         <MarketplaceInfo />

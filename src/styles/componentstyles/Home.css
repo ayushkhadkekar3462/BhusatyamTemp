@@ -17,3 +17,16 @@
     display: flex;
     justify-content: center;
 }
+.slider2heading
+{
+    /* border: 2px solid black; */
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.slider2headingencloser
+{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid blue; */
+    align-items:center;
+}
