@@ -2,6 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 const categories = [
   'Campsites',
@@ -62,11 +63,12 @@ const Textslider = () => {
     <div className="container mx-auto my-4">
       <Slider {...settings}>
         {categories.map((category, index) => (
-          <div key={index} className="p-2">
-            <div className="border border-black rounded-lg p-2 text-center bg-transparent font-bold hover:cursor-pointer ">
-              {category}
-            </div>
+          <Link to="/Component"><div key={index} className="p-2">
+          <div className="border border-black rounded-lg p-2 text-center bg-transparent font-bold hover:cursor-pointer ">
+            {category}
           </div>
+        </div></Link>
+          
         ))}
       </Slider>
     </div>

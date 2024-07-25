@@ -33,7 +33,7 @@ function Header() {
               </Link>
               {!isMobile && (
                 <>
-                  <Link className={`nav-link pt-2 ml-10 ${styles.clicklinks}`} to="#">Buy land</Link>
+                  <Link className={`nav-link pt-2 ml-10 ${styles.clicklinks}`} to="/Component">Buy land</Link>
                   <Link className={`nav-link pt-2 mr-4 ml-4 ${styles.clicklinks}`} to="#">Find agent</Link>
                 </>
               )}
@@ -55,7 +55,7 @@ function Header() {
                 <Nav className={`justify-content-end flex-grow-1 pe-3 ${styles.headerText}`}>
                 {isMobile && (
                 <>
-                  <Link className={`nav-link  ${styles.clicklinks}`} to="#">Buy land</Link>
+                  <Link className={`nav-link  ${styles.clicklinks}`} to="/Component">Buy land</Link>
                   <Link className={`nav-link  ${styles.clicklinks}`} to="#">Find agent</Link>
                 </>
               )}

@@ -1,5 +1,6 @@
 import React from 'react'
 import "../styles/componentstyles/Besidecard.css"
+import { Link } from 'react-router-dom'
 
 
 export default function BesideSlider() {
@@ -8,7 +9,7 @@ export default function BesideSlider() {
      <div className="besidecard">
         <div className="title">Buy land near you</div>
         <div className="content">Search land and lifestyle real estate including homes with land, vacant land, rural property, commercial lots, and more.</div>
-        <button className="besidesliderbtn">Land for sale near me</button>
+        <Link to="/Component"><button className="besidesliderbtn">Land for sale near me</button></Link>
      </div>
     </>
   )

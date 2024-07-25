@@ -11,6 +11,7 @@ import CategoryList from '../../components/categorylist'
 import MarketplaceInfo from '../../components/info'
 import Footer from '../../components/footer'
 import CardSlider2 from '../../components/CardSlider2'
+import ResponsiveComponent from '../../components/ResponsiveComponent'
 
 function Home() {
   return (
@@ -41,6 +42,7 @@ function Home() {
       </header>
     </div>
     <Footer />
+    {/* <ResponsiveComponent/> */}
     </>
 
   )

@@ -1,5 +1,6 @@
 // src/components/CategoryList.jsx
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const initialCategories = [
   'A-frame houses', 'Airstrips', 'Barns', 'Beachfront land', 'Borders public land',
@@ -23,11 +24,12 @@ const CategoryList = () => {
     <div className="container mx-auto my-12  mx-8 text-center">
       <div className="flex flex-wrap justify-center">
         {categories.map((category, index) => (
-          <div key={index} className="p-2">
-            <div className=" rounded-lg p-2 bg-transparent hover:cursor-pointer hover:underline">
-              {category}
-            </div>
+          // eslint-disable-next-line react/jsx-key
+          <Link to="/Component"><div key={index} className="p-2">
+          <div className=" rounded-lg p-2 bg-transparent hover:cursor-pointer hover:underline">
+            {category}
           </div>
+        </div></Link>
         ))}
       </div>
       <button
