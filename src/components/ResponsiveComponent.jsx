@@ -97,12 +97,9 @@ const MapSection = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media only screen and (max-width: 600px) {
-    .map-section
-    {
-        display: none;
-    }
 
+  @media only screen and (max-width: 600px) {
+    display: none; // Hide the MapSection on mobile screens
   }
 `;
 
