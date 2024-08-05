@@ -132,7 +132,7 @@ const Map = () => {
     parkDate.features.forEach(park => {
       const el = document.createElement('div');
       el.className = 'marker';
-      el.innerHTML = '<img src="/skateboarding.svg" alt="Skate Park Icon" />';
+      el.innerHTML = '<img class="markerimg" src="https://png.pngtree.com/png-vector/20201109/ourmid/pngtree-vector-location-icon-png-image_2413694.jpg" />';
 
       // Function to handle marker click
       const handleMarkerClick = () => {
@@ -145,12 +145,22 @@ const Map = () => {
         const newPopup = new mapboxgl.Popup()
           .setLngLat(park.geometry.coordinates)
           .setHTML(`
-            <div>
-              <h2>${park.properties.NAME}</h2>
-              <p>${park.properties.DESCRIPTIO}</p>
+            <div class="popup-card">
+              <div class="popup-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnHXBAIX_fQs-LB5c_6ZO6Q-TNd5XJKkS6NQ&s');"></div>
+              <div class="popup-content">
+                <h2>${park.properties.NAME}</h2>
+                <p>${park.properties.DESCRIPTIO}</p>
+                
+              </div>
             </div>
           `)
           .addTo(map.current);
+
+        // Add close button functionality
+        newPopup.getElement().querySelector('.popup-close-btn').addEventListener('click', () => {
+          newPopup.remove();
+          setCurrentPopup(null);
+        });
 
         setCurrentPopup(newPopup);
       };
@@ -201,6 +211,8 @@ const Map = () => {
 };
 
 export default Map;
+
+
 
 
 
