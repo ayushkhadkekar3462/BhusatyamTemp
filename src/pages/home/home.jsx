@@ -11,6 +11,7 @@ import CategoryList from '../../components/categorylist'
 import MarketplaceInfo from '../../components/info'
 import Footer from '../../components/footer'
 import CardSlider2 from '../../components/CardSlider2'
+import '../../index.css';
 import ResponsiveComponent from '../../components/ResponsiveComponent'
 
 function Home() {
@@ -24,9 +25,10 @@ function Home() {
          </div>
        
     </div>
-    <div className='sliderencloser'><div className='wholeslider'>
+    <center><div className='sliderencloser w-[90vw] '><div className='wholeslider '>
       <BesideSlider/>
-    <CardSlider/></div></div>
+    <CardSlider/></div></div></center>
+    
     
     <div className="h-auto flex justify-center">
       <div className="w-[75%] p-2">

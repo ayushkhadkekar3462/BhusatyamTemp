@@ -77,6 +77,7 @@ import Card from './Card';
 import Map from './Map';
 import Header from './header';
 import "../styles/componentstyles/ResponsiveComponent.css";
+import "../index.css"
 
 // Dummy images and property details array for the cards
 const properties = [
@@ -121,11 +122,11 @@ const ResponsiveComponent = () => {
 
     <>
     <Header/>
-    <Container>
-      <MapSection className="map-section">
+    <Container className='page2'>
+      <MapSection className="map-section className='page2'">
         <Map/>
       </MapSection>
-      <CardsSection>
+      <CardsSection className='page2'>
         {properties.map((property, index) => (
           <Card
             key={index}

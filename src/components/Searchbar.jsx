@@ -1,6 +1,7 @@
 import React from 'react'
 import "../styles/componentstyles/searchbar.css"
 import { useState } from 'react';
+import "../index.css"
 // function handleSearch(){
 
 // }

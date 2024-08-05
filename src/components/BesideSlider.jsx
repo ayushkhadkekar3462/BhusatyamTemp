@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/componentstyles/Besidecard.css"
 import { Link } from 'react-router-dom'
-
+import "../index.css"
 
 export default function BesideSlider() {
   return (

@@ -1,6 +1,7 @@
 // src/Card.js
 import React from 'react';
 import styled from 'styled-components';
+import "../index.css"
 
 const CardContainer = styled.div`
   background: #ffffff;
@@ -23,7 +24,7 @@ const CardInfo = styled.div`
 
 const Card = ({ image, title, details }) => {
   return (
-    <CardContainer>
+    <CardContainer className='propertycard'>
       <CardImage src={image} alt={title} />
       <CardInfo>
         <h3>{title}</h3>

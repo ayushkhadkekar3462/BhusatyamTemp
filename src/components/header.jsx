@@ -4,12 +4,22 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { Link } from "react-router-dom";
-import cfalogo from "../assets/cfalogo.png";
+// import cfalogo from "../assets/cfalogo.png";
 import styles from "../../src/styles/componentstyles/header.module.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../index.css';
-
+import { faMoon , faSun} from '@fortawesome/free-solid-svg-icons';
 function Header() {
   const [isMobile, setIsMobile] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  // const[mode, setMode] = useState(false);
+
+  const toggletheme=()=>{
+    document.body.classList.toggle('dark');
+    setIsDarkMode(!isDarkMode);
+    // document.getElementsByClassName('header')[0].classList.toggle('dark');
+  }
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -62,6 +72,7 @@ function Header() {
                   <Link className={`nav-link  ${styles.clicklinks}`} to="#">Post property</Link>
                   <Link className={`nav-link ${styles.clicklinks}`} to="#">Log in</Link>
                   <Link className={`nav-link ${styles.clicklinks}`} to="#">Sign up</Link>
+                  <button className="p-2   rounded-full" onClick={toggletheme}>{isDarkMode ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} id="moonicon"/>} </button>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
